@@ -142,21 +142,52 @@ User preferences and gamification headquarters:
 
 ---
 
-## 🛠️ Local Development & Deployment
+## Running Locally
 
-### Running Locally
+To run LifeOS on your local machine, serve the repository folder with any standard static HTTP server:
+
 ```bash
-# Python built-in server
 python -m http.server 5173
+```
 
-# Or with Node.js
+Then open:
+```text
+http://localhost:5173
+```
+
+Alternatively, if you have Node.js installed:
+```bash
 npx serve .
 ```
-Open `http://localhost:5173` in your browser.
 
-### Deploying to GitHub Pages
-Because LifeOS is built purely with static HTML5, CSS3, and native JavaScript ES modules with zero build steps or external dependencies:
-1. Push this repository to GitHub.
-2. Go to **Repository Settings ➔ Pages**.
-3. Under **Branch**, select `main` and folder `/ (root)`.
-4. Click **Save**.
+---
+
+## Deployment
+
+LifeOS is engineered to run as a 100% static site with zero build requirements or server dependencies. To deploy to **GitHub Pages**:
+1. Push this repository to GitHub on the `main` branch.
+2. In your GitHub repository, navigate to **Settings ➔ Pages**.
+3. Under **Build and deployment > Source**, select **Deploy from a branch**.
+4. Under **Branch**, select `main` and folder `/ (root)`.
+5. Click **Save**. Your site will be published at `https://<username>.github.io/<repository>/`.
+
+*(An automated GitHub Actions workflow is also provided in `.github/workflows/deploy.yml` for continuous deployment).*
+
+---
+
+## Backup
+
+LifeOS provides built-in local data management directly from the **Profile** screen (`#profile`):
+- **JSON Snapshot Export & Restore**: Export the complete application state (tasks, habits, study sessions, finances, journal entries, and settings) as a structured `.json` backup file, which can be restored anytime.
+- **CSV Data Exports**: Export structured spreadsheets for specific categories:
+  - **Expenses CSV**: Date, description, amount, type, category.
+  - **Study Sessions CSV**: Date, subject, duration, topics, difficulty, focus rating.
+  - **Habits CSV**: Name, category, targets, streaks, completions.
+  - **Workouts CSV**: Daily workout logs, pushups, pullups, planks.
+
+---
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
