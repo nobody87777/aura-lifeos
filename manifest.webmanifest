@@ -1,0 +1,35 @@
+{
+  "name": "AURA // Personal Life OS",
+  "short_name": "AURA OS",
+  "description": "Daily Personal Operating System tailored for a Diploma Computer Engineering Student.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07090e",
+  "theme_color": "#07090e",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "What Should I Do Now?",
+      "url": "./#do-now",
+      "description": "Instant single priority recommendation"
+    },
+    {
+      "name": "Deep Work Focus",
+      "url": "./#focus",
+      "description": "Distraction-free focus timer"
+    },
+    {
+      "name": "Quick Add",
+      "url": "./#quick-add",
+      "description": "Universal capture"
+    }
+  ]
+}

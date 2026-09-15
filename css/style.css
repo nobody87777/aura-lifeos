@@ -1,0 +1,321 @@
+/* AURA OS // Core Design System & Theme Engine (HTML5/CSS3) */
+
+:root, .theme-dark-neon {
+  --bg-base: #07090e;
+  --bg-surface: #0f1422;
+  --bg-surface-elevated: #161e31;
+  --bg-glass: rgba(15, 20, 34, 0.75);
+  --bg-glass-card: rgba(18, 25, 42, 0.65);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-focus: rgba(0, 240, 255, 0.4);
+  --border-glow: rgba(0, 240, 255, 0.25);
+  
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --neon-cyan: #00f0ff;
+  --neon-purple: #a855f7;
+  --neon-emerald: #10b981;
+  --neon-amber: #f59e0b;
+  --neon-rose: #f43f5e;
+  --neon-indigo: #6366f1;
+  
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+.theme-midnight {
+  --bg-base: #080d1a;
+  --bg-surface: #0f172a;
+  --bg-surface-elevated: #1e293b;
+  --bg-glass: rgba(15, 23, 42, 0.8);
+  --bg-glass-card: rgba(30, 41, 59, 0.65);
+  --border-subtle: rgba(255, 255, 255, 0.09);
+  --border-focus: rgba(99, 102, 241, 0.4);
+  --neon-cyan: #38bdf8;
+  --neon-purple: #818cf8;
+}
+
+.theme-amoled {
+  --bg-base: #000000;
+  --bg-surface: #09090b;
+  --bg-surface-elevated: #121215;
+  --bg-glass: rgba(10, 10, 12, 0.85);
+  --bg-glass-card: rgba(18, 18, 22, 0.8);
+  --border-subtle: rgba(255, 255, 255, 0.12);
+  --border-focus: rgba(255, 255, 255, 0.35);
+  --neon-cyan: #e2e8f0;
+  --neon-purple: #c084fc;
+}
+
+.theme-matrix {
+  --bg-base: #030a06;
+  --bg-surface: #06140b;
+  --bg-surface-elevated: #0d2415;
+  --bg-glass: rgba(6, 20, 11, 0.8);
+  --bg-glass-card: rgba(10, 30, 17, 0.7);
+  --border-subtle: rgba(16, 185, 129, 0.15);
+  --border-focus: rgba(16, 185, 129, 0.5);
+  --neon-cyan: #34d399;
+  --neon-purple: #059669;
+}
+
+.theme-minimal-dark {
+  --bg-base: #0e1117;
+  --bg-surface: #161b22;
+  --bg-surface-elevated: #21262d;
+  --bg-glass: rgba(22, 27, 34, 0.8);
+  --bg-glass-card: rgba(33, 38, 45, 0.7);
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-focus: rgba(148, 163, 184, 0.4);
+  --neon-cyan: #cbd5e1;
+  --neon-purple: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding-bottom: 72px; /* space for mobile bottom bar */
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 24px;
+  }
+  .desktop-subnav {
+    display: block !important;
+  }
+  .md-inline {
+    display: inline !important;
+  }
+}
+
+/* Glass Panels & Cards */
+.glass-panel {
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+}
+
+.glass-card {
+  background: var(--bg-glass-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  border-color: var(--border-focus);
+}
+
+/* Glowing Elements */
+.glow-cyan {
+  box-shadow: 0 0 25px -4px rgba(0, 240, 255, 0.35);
+}
+
+.glow-purple {
+  box-shadow: 0 0 25px -4px rgba(168, 85, 247, 0.35);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 25px -4px rgba(16, 185, 129, 0.35);
+}
+
+.text-cyan { color: var(--neon-cyan); }
+.text-purple { color: var(--neon-purple); }
+.text-emerald { color: var(--neon-emerald); }
+.text-amber { color: var(--neon-amber); }
+.text-rose { color: var(--neon-rose); }
+.text-muted { color: var(--text-muted); }
+.text-dim { color: var(--text-dim); }
+
+.font-mono { font-family: var(--font-mono); }
+
+/* Buttons & Interactive */
+button, input, select, textarea {
+  font-family: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all 0.15s ease;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--neon-cyan) 0%, var(--neon-indigo) 50%, var(--neon-purple) 100%);
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 14px;
+  padding: 10px 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 13px;
+  box-shadow: 0 8px 20px -4px rgba(0, 240, 255, 0.3);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  border-radius: 12px;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: var(--border-focus);
+}
+
+/* Inputs */
+.input-glass {
+  width: 100%;
+  background: rgba(10, 14, 24, 0.7);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.input-glass:focus {
+  border-color: var(--neon-cyan);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 240, 255, 0.15);
+}
+
+/* Grid & Layout Utilities */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  .app-container {
+    padding: 24px;
+  }
+}
+
+.grid-cols-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.grid-cols-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.grid-cols-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+
+@media (max-width: 640px) {
+  .grid-cols-3, .grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.12); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.25); }
+
+/* Floating Action Button (+) */
+.fab-quick-action {
+  position: fixed;
+  bottom: 80px;
+  right: 18px;
+  width: 52px;
+  height: 52px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 240, 255, 0.4);
+  z-index: 45;
+  font-size: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 768px) {
+  .fab-quick-action {
+    bottom: 28px;
+    right: 28px;
+    width: 56px;
+    height: 56px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+.pulse-glow {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+/* Deep Work Mode (Section 12: Distraction-free full viewport) */
+body.deep-work-mode {
+  padding-bottom: 0 !important;
+  overflow: hidden;
+}
+
+body.deep-work-mode #header-mount,
+body.deep-work-mode #desktop-subnav-mount,
+body.deep-work-mode #bottom-nav-mount,
+body.deep-work-mode #fab-quick-action,
+body.deep-work-mode #focus-header-panel {
+  display: none !important;
+}
+
+body.deep-work-mode #main-content {
+  padding-top: 0 !important;
+}
+
+body.deep-work-mode #focus-main-card {
+  min-height: 100vh;
+  border-radius: 0;
+  border: none;
+  background: var(--bg-base);
+}
+
