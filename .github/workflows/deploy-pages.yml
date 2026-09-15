@@ -1,4 +1,4 @@
-name: Deploy AURA LifeOS to GitHub Pages
+name: Deploy LifeOS to GitHub Pages
 
 on:
   push:

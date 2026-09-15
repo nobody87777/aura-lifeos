@@ -5,6 +5,7 @@ const ASSETS_TO_CACHE = [
   './index.html',
   './manifest.webmanifest',
   './favicon.svg',
+  './favicon.ico',
   './icons.svg',
   './css/style.css',
   './js/app.js'
