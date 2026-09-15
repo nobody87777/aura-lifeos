@@ -1,131 +1,144 @@
-# ⚡ AURA // Personal LifeOS
+# LifeOS – My Daily Life Tracker
 
-> **A personal daily operating system engineered for a Diploma Computer Engineering student in Kerala, India.**
-> Built with pure HTML5, CSS3, and modern JavaScript ES Modules. 100% client-side, zero backend required, offline-first PWA, deployable directly to GitHub Pages.
+> **A daily personal operating system engineered for a Computer Engineering student in Kerala, India.**
+> Built as a 100% client-side, zero-backend, offline-capable Progressive Web App (PWA). Designed to run anywhere and deploy directly to GitHub Pages.
 
 ---
 
-## 🚀 Key Modules & Architecture
+## Features
+- **"⚡ What should I do now?" Intelligent Decision Engine**: Eliminates decision paralysis by analyzing the current time, energy level, deadlines, and schedule to recommend a single high-leverage action.
+- **Top 3 Priority Matrix**: Prevents cognitive overload by enforcing a strict 3-task daily focus rule.
+- **Kerala Technical Education 75% Attendance Guard**: Real-time compliance tracker calculating exact safe bunk limits or required recovery lectures under state board regulations.
+- **Native Web Audio Ambient Synthesizer**: Generative in-browser audio engine (Lo-Fi binaural beats, rain acoustic filter, white noise) with zero audio file dependencies.
+- **Gamified Progression System**: Experience points (XP), leveling tiers ("Algorithm Knight"), milestone badges, and streak shields.
+- **Deep Work Sanctuary**: Distraction-free full-screen environment stripping away all chrome and badges.
+- **Kerala Student Finance Engine**: Instant 1-tap tracking for daily bus pass (₹30), snacks (₹50), canteen meals (₹80), and lab records (₹150) against a monthly budget.
+- **Spaced Repetition Study Engine**: 1-3-7-14 day review cycle tracking 10 core Computer Engineering subjects with confidence scoring.
+- **Midnight Rollover Automation**: Timezone-safe daily automation rolling open loops, calculating streaks, and generating fresh daily task containers.
 
-### 1. 🏠 Executive Dashboard & Home (`#home`)
-- **Single Next Action Hero ("⚡ What should I do now?")**: Algorithmic decision engine taking time-of-day, energy level, 9–5 college hours, and deadlines to recommend **exactly one action**, eliminating decision paralysis.
-- **Horizontal Weekly Calendar**: Visual day progress indicators.
-- **Top 3 Priority Matrix**: Prevents cognitive overload by strictly limiting daily "Must-Dos" to 3.
-- **"Win The Day" Loop**: 3-step progressive milestone system.
-- **1-Tap Fast Logging**: 1-tap water logging, 1-tap habit checkoffs, 1-tap gym checkoff.
-- **Recovery Mode (Section 34)**: "Zero-Guilt Sanctuary" shrinking daily expectations down to 4 bare essentials when sick or overwhelmed.
-- **College Mode (Section 37)**: Automatically engages between 09:00 AM – 05:00 PM on weekdays with quick academic note taking and attendance shortcuts.
+---
 
-### 2. ✅ Task Matrix (`#tasks`)
-- **Views**: Today, Tomorrow, Upcoming, Someday / Later, and Completed.
-- **Priority Tiers**:
-  - 🔴 **Must-Do** (Maximum 3/day to prevent burnout)
-  - 🟡 **Should-Do**
-  - 🟢 **Could-Do** (Optional back burner)
-- **Filters**: By tier and category (College, MultitaskCoder, Coding, Fitness, Personal).
-- **Inline Quick Add**: Add tasks directly with tier selection.
-- **1-Tap Focus Launch**: Seamlessly starts a Pomodoro session for any selected task.
+## Screens
 
-### 3. ⏱️ Deep Work Hub (`#focus`)
-- **Presets**: 25m Pomodoro, 45m Deep Work, 60m Sprint, 15m Quick.
-- **Web Audio API Ambient Synthesizer**: Native in-browser generative audio (no external mp3s):
-  - 🎹 Warm Lo-Fi binaural chord generator
-  - 🌧️ Synthesized rain noise filter
-  - 📻 Gentle white noise
-  - 🔇 Mute
-- **Distraction-Free Deep Work Mode (Section 12)**: Hides chrome, navigation, and badges to leave only the task, large timer, and essential controls.
-- **Post-Session Reflection**: 1–5 star focus rating and notes with +20 XP.
+### 1. Dashboard (`#home`)
+The executive command center displaying:
+- Current greeting and localized date
+- Next Recommended Action hero card ("⚡ What should I do now?")
+- Horizontal weekly calendar with daily progress dots
+- Today's Top 3 priorities
+- Quick 1-tap logging widgets (Water, Habit checkoffs, Gym)
+- Contextual modes (College Mode during 9 AM – 5 PM weekdays; Recovery Mode sanctuary)
 
-### 4. 📚 Computer Engineering Study Hub (`#study`)
-- **Core Curriculum Subjects**: Java Programming, Python & Scripting, C Programming, Data Structures & Algorithms, Web Development, DBMS & SQL, Computer Networks, Operating Systems, Microprocessors & IoT, Engineering Mathematics.
-- **Confidence Rating**: 0–100% mastery tracking per subject.
-- **Spaced Repetition Algorithm (Section 15)**: 1-3-7-14 day interval review queue.
-- **Weekly Study Velocity**: Native SVG bar chart showing study hours per day.
-- **Exam Countdowns**: Days remaining until semester theory exams and practical lab evaluations.
+### 2. Tasks (`#tasks`)
+Task management matrix organized by priority and timeframe:
+- Priority tiers: 🔴 Must-Do (max 3), 🟡 Should-Do, and 🟢 Could-Do
+- Contextual tabs: Today, Tomorrow, Upcoming, Someday / Later, and Completed
+- Category tagging: College, MultitaskCoder, Coding, Fitness, Personal
+- 1-tap transition from any task directly into a Deep Work focus session
 
-### 5. 💻 Project Forge: MultitaskCoder (`#projects`)
-- **Flagship Project Tracker**: 72% progress, 31h 20m invested.
-- **Milestones Roadmap**: Data layer, theory engine, quizzes, debugger module, UI polish, and PWA packaging.
-- **Issues & Backlog**: Feature and bug tracking with status tags.
-- **Time Logger**: 1-tap "+ Log 30m Coding" (+20 XP).
+### 3. Habits (`#home` & `#profile`)
+Visual habit tracking grid with consistency streaks:
+- Morning routines, hydration, calisthenics, and evening wind-down
+- Streak preservation with streak shield protection
+- 1-tap checkoff with instant XP rewards
 
-### 6. 💼 Career & Skill Matrix (`#career`)
-- **Skill Inventory**: Categorized by Languages, Core CS, and Tools & Systems.
-- **Confidence Bars**: 1-tap confidence boost buttons (+5% per review).
-- **Credentials**: Completed certificates and portfolio projects.
-- **Campus Placement Tracker**: Track Infopark Kochi, KSUM, and IT company internship/job applications.
+### 4. Focus (`#focus`)
+Dedicated deep work and Pomodoro timer suite:
+- Presets: 25m Pomodoro, 45m Deep Work sprint, 60m Marathon, 15m Speed run
+- Built-in sound generator (Lo-Fi synth, rain generator, white noise)
+- Distraction-free full-screen mode
+- Post-session reflection rating (1–5 stars) with focus notes and +20 XP
 
-### 7. 🎯 Goal Breakdown Engine (`#goals`)
-- **5-Tier Strategic Cascade (Section 24)**:
-  1. **1-Year Vision**: SDE placement upon graduation
-  2. **3-Month Milestone**: Master Java/DSA & ship MultitaskCoder v1
-  3. **1-Month Target**: Binary Search, Linked Lists, Java Streams
-  4. **1-Week Sprint**: Complete 5 LeetCode problems
-  5. **Today's Action Step**: Single concrete 40-minute action
-- **1-Tap Task Conversion**: Button to push today's goal action directly into the daily Top 3 list.
+### 5. Study (`#study`)
+Computer Engineering academic hub:
+- 10 curriculum subjects: Java Programming, Python & Scripting, C Programming, Data Structures & Algorithms, Web Development, DBMS & SQL, Computer Networks, Operating Systems, Microprocessors & IoT, Engineering Mathematics
+- Spaced repetition review queues (1-3-7-14 day intervals)
+- Subject mastery confidence meters (0–100%)
+- Theory and practical lab exam countdown clocks
+- Weekly study velocity chart
 
-### 8. 📋 Attendance Monitor (`#attendance`)
-- **Kerala Diploma 75% Rule**: Mandatory threshold monitor for state technical board regulations.
-- **Predictive Buffer Engine**:
-  - Safe status (≥80%): Computes exact count of lectures that can be safely missed.
-  - Critical status (<75%): Computes exact number of consecutive lectures required to recover above 75%.
-- **1-Tap Logging**: "+ Attended" (+1/+1) and "- Missed" (+0/+1) buttons.
+### 6. Goals (`#goals`)
+5-tier strategic breakdown cascade turning long-term vision into daily execution:
+1. 1-Year Vision (SDE Placement)
+2. 3-Month Milestone (MultitaskCoder v1 & Java DSA)
+3. 1-Month Target (Binary Search, Linked Lists, Java Streams)
+4. 1-Week Sprint (LeetCode challenges)
+5. Today's Action Step (Single 40-minute push convertible to Top 3 with 1 tap)
 
-### 9. ⚡ Vitality & Physical Training (`#health`)
-- **Hydration Tracker (Section 19)**: 8-glass interactive visual grid (2,000 ml target) with 1-tap fill/unfill.
-- **Sleep Quality (Section 20)**: Bedtime, wake time, duration, quality score, consistency rating, and non-medical gentle behavioral tips.
-- **Weekly Gym Split (Section 18)**: Monday Chest/Triceps through Saturday Core/Cardio and Sunday Rest.
-- **Calisthenics Counters**: Fast increment buttons for Pushups (+5, +10), Pullups (+1, +3), and Plank seconds (+30s, +60s).
+### 7. Health (`#health`)
+Daily vitality and physical conditioning tracker:
+- Hydration grid: 8-glass visual water tracker (2,000 ml target)
+- Calisthenics fast counters: Pushups, Pullups, Plank timer
+- Weekly gym split schedule (Chest/Triceps through Rest Day)
+- Sleep tracker: Bedtime, wake time, quality rating, and gentle behavioral tips
 
-### 10. 💸 Kerala Student Personal Finance (`#finance`)
-- **Currency**: Indian Rupee (₹ INR).
-- **Monthly Budget**: Spent vs. remaining allowance bar (₹6,000 default).
-- **1-Tap Quick Logging (Section 80)**:
-  - 🚌 `₹30 Bus Pass`
-  - ☕ `₹50 Tea & Snack`
-  - 🍛 `₹80 Canteen Meals`
-  - 📄 `₹150 Print / Lab records`
-- **Category Breakdown & Transaction History**: Food, Travel, Education, Subscriptions, Gym, Personal.
+### 8. Finance (`#finance`)
+Lightweight personal finance tracker tailored for college students:
+- Currency: Indian Rupee (₹ INR)
+- Monthly budget allowance vs. spent progress bar
+- 1-tap quick logging shortcuts (₹30 Bus Pass, ₹50 Tea & Snack, ₹80 Canteen Meals, ₹150 Lab Records)
+- Categorized expense history (Food, Travel, Education, Subscriptions, Gym, Personal)
 
-### 11. 📝 Daily Decompression Journal (`#journal`)
-- **Mood & Energy Check-in**: 5 mood states and energy sliders (20% – 100%).
-- **4 Guided Reflection Prompts**:
-  1. What went well today? (Wins & accomplishments)
-  2. What was difficult or caused distraction?
-  3. What did I learn today? (Engineering or life insight)
-  4. What is one thing I am grateful for?
-- **Reflection Archive**: Historical entries saved locally.
+### 9. Projects (`#projects` & `#career`)
+- **MultitaskCoder**: Flagship student project roadmap, milestones, bug backlog, and 1-tap coding time logger (+20 XP).
+- **Career Matrix**: Placement tracking for Infopark Kochi, KSUM, and IT opportunities, skill confidence bars, and verified credentials.
 
-### 12. 🌙 Reviews & Protocols (`#reviews`)
-- **Nightly Shutdown Protocol (Section 32)**:
-  - Clear open loops: Roll uncompleted tasks to tomorrow or mark done.
-  - Lock tomorrow's Top 3 priorities in advance.
-  - Sound chime and award +25 XP upon completion.
-- **Weekly Retrospective (Section 33)**: 7-day executive summary covering study velocity, coding commits, workout consistency, and attendance stability.
+### 10. Analytics (`#reviews` & `#journal`)
+Comprehensive self-reflection and performance insights:
+- Weekly Retrospective: Study hours, coding velocity, workout consistency, and attendance trends
+- Nightly Shutdown Protocol: Open-loop clearing, tomorrow's Top 3 planning, and chime celebration
+- Daily Decompression Journal: Mood & energy check-in (20% – 100%) with 4 guided reflection prompts
+- Distraction audit log tracking time lost to social media or procrastination
 
-### 13. ⚙️ Profile, Gamification & Settings (`#profile`)
-- **Gamification Engine**: Player level, XP progress bar, titles ("Algorithm Knight"), and streak shields (preserves streak when life gets in the way).
-- **Achievements Gallery**: 6 core milestone badges.
-- **5 Theme Engines (Section 4)**:
-  - 💎 `Dark Neon` (Default futuristic cyan/purple)
-  - 🌌 `Midnight Blue` (Deep sapphire)
-  - 🖤 `AMOLED Black` (True OLED #000000)
-  - ⚡ `Matrix Emerald` (Cyberpunk green phosphor)
-  - 🏢 `Minimal Dark` (Monochrome slate)
-- **Data Portability & Backups (Section 60)**:
-  - Full JSON snapshot export & restore
-  - CSV exports: Expenses CSV, Study Sessions CSV
-  - Factory reset
+### 11. Profile (`#profile`)
+User preferences and gamification headquarters:
+- Player Level, XP progress bar, unlocked achievements gallery, and streak shields
+- 5 Cyberpunk & Minimalist Theme Engines (Dark Neon, Midnight Blue, AMOLED Black, Matrix Emerald, Minimal Dark)
+- Data export (Full JSON snapshot, Expenses CSV, Study CSV) and factory restore
+
+---
+
+## PWA
+- **Installable**: Full Progressive Web App supporting Web App Manifest (`manifest.webmanifest`). Can be added to the home screen on iOS, Android, macOS, and Windows.
+- **Offline Support**: Equipped with a Service Worker (`sw.js`) that caches all core application assets, styles, icons, and scripts for instant offline usability.
+- **Mobile-First Design**: Optimized for 360px–430px smartphone displays with native touch targets, smooth transitions, and fixed ergonomic navigation.
+- **Standalone Mode**: Launches without browser URL bars or chrome for an authentic native application experience.
+
+---
+
+## Storage
+- **Local-First Architecture**: All tasks, habits, study logs, transactions, and reflections are stored locally in the browser's `localStorage`.
+- **Zero Server Latency**: Operations are instantaneous with zero network round-trips.
+- **Complete Data Portability**: Full JSON backup export and import, as well as CSV exports for financial records and study logs.
+
+---
+
+## Privacy
+- **100% Client-Side**: The application does not require a backend server, database, or external API for normal daily use.
+- **Zero Tracking**: Your personal schedule, financial transactions, health metrics, and journal entries never leave your device.
+- **No Third-Party Telemetry**: Your thoughts, grades, and habits remain strictly yours.
+
+---
+
+## Technologies
+- **Markup**: Semantic HTML5 with PWA meta tags and Web Manifest integration.
+- **Styling**: Modern CSS3 (Custom Properties / CSS Variables, Glassmorphism, CSS Grid, Flexbox, Mobile-First Media Queries).
+- **Logic**: Vanilla JavaScript (ES2022 Modules, Object-Oriented Architecture, Event-Driven State Pub/Sub).
+- **Audio Engine**: Web Audio API (`AudioContext`, `OscillatorNode`, `BiquadFilterNode`) for real-time procedural sound generation.
+- **Visualizations**: Native SVG procedural charts (Bar charts, Donut charts, Sparklines) with zero third-party chart dependencies.
+- **Storage**: Browser `localStorage` API with defensive parsing, schema versioning, and sanitization.
+- **Service Worker**: Cache API for offline asset resolution and fast reloads.
+- **Deployment**: Pure static hosting on GitHub Pages with automated GitHub Actions workflow.
 
 ---
 
 ## ⌨️ Global Keyboard Shortcuts
 
 | Shortcut | Action |
-| --- | --- |
+| :--- | :--- |
 | `Cmd/Ctrl + K` | Open Global Search across all tasks, subjects, projects, and notes |
-| `N` | Quick Add modal (Task, Expense, Study, Note, Distraction) |
-| `Esc` | Close any active modal or exit Deep Work mode |
+| `N` | Universal Quick Add modal (Task, Expense, Study, Note, Distraction) |
+| `Esc` | Close active modal or exit Deep Work mode |
 
 ---
 
@@ -142,8 +155,8 @@ npx serve .
 Open `http://localhost:5173` in your browser.
 
 ### Deploying to GitHub Pages
-Because AURA is built purely with static HTML5, CSS3, and native JavaScript ES modules with zero build steps or external dependencies:
+Because LifeOS is built purely with static HTML5, CSS3, and native JavaScript ES modules with zero build steps or external dependencies:
 1. Push this repository to GitHub.
 2. Go to **Repository Settings ➔ Pages**.
-3. Under **Branch**, select `main` (or `master`) and folder `/ (root)`.
-4. Click **Save**. Your LifeOS will be live globally in seconds!
+3. Under **Branch**, select `main` and folder `/ (root)`.
+4. Click **Save**.
